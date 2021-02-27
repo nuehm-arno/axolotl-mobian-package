@@ -50,6 +50,17 @@ If you want Axolotl as daemon started automatically at login, copy the desktop f
 sudo cp /usr/share/applications/axolotl-server.desktop /etc/xdg/autostart
 ```
 
+# Updates
+If a new version of Axolotl or this package is out, you can simply use the installation command to update the app. Your local files will be kept, but a backup is recommended.
+
+# Removing Axolotl
+Axolotl shall be removed via
+```
+sudo apt remove --purge axolotl
+```
+While removing the app, you will be asked, whether you want to keep your local files (configuration, registration, contacts and messages) or if you want them to be deleted.
+Please choose careful.
+
 # Axolotl Qt
 There is an option to use Axolotl with Qt via qmlscene, but this isn't working at the moment.
 
@@ -61,7 +72,7 @@ sudo apt-get install qml-module-qtquick.dialogs
 ```
 
 # Personal Data
-Your configuration, registration and message files are stored here
+Your configuration, registration, contact and message files are stored here
 ```
 ~/.config/textsecure.nanuc
 ~/.local/share/textsecure.nanuc
