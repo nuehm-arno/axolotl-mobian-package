@@ -9,7 +9,7 @@ git clone https://github.com/nuehm-arno/axolotl-mobian-package
 and start the installation with
 ```
 cd axolotl-mobian-package
-sudo apt install ./axolotl_0.9.8_arm64.deb
+sudo apt install ./axolotl_0.9.8-2_arm64.deb
 ```
 
 # Important
@@ -33,6 +33,9 @@ This installation method provides you with one App Menu Entry "Axolotl". It can 
 sudo nano /usr/share/applications/axolotl.desktop
 ```
 
+# First Start
+The first start of Axolotl takes some time, because local folders have to be created.
+
 # Daemonized Server Setup
 Using this setup, Axolotl can be run as a daemon in the background and a browser (Firefox-ESR) for user interface.
 There are two more desktop files for this setup
@@ -50,7 +53,12 @@ sudo cp /usr/share/applications/axolotl-server.desktop /etc/xdg/autostart
 # Axolotl Qt
 There is an option to use Axolotl with Qt via qmlscene, but this isn't working at the moment.
 
-If you are willing to give it a try, edit the desktop file and change the "#" between the two "Exec=" lines.
+If you are willing to give it a try, edit the desktop file and change the "#" between the two "Exec=" lines. You will also need the following dependencies
+```
+sudo apt update && sudo apt install qmlscene qml-module-qtwebsockets qml-module-qtmultimedia qml-module-qtwebengine
+sudo apt-get install qml-module-qtquick.controls
+sudo apt-get install qml-module-qtquick.dialogs
+```
 
 # Personal Data
 Your configuration, registration and message files are stored here
