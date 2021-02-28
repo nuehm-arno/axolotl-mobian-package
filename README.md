@@ -78,3 +78,7 @@ Your configuration, registration, contact and message files are stored here
 ~/.local/share/textsecure.nanuc
 ```
 and you should backup these folders regularly and espescially before removing or re-installing Axolotl.
+
+
+# Disclaimer
+This package is experimental and it was built with the help of FPM. It is not made following the official Debian guidelines, but this is a future goal.
