@@ -1,0 +1,13 @@
+Package: axolotl
+Version: 0.9.9-1
+License: GPL-3.0-or-later
+Vendor: nanu-c <www.nanu-c.org>
+Architecture: arm64
+Maintainer: arno_nuehm <https://github.com/nuehm-arno>
+Installed-Size: 36116
+Pre-Depends: 
+Section: devel
+Priority: optional
+Homepage: https://github.com/nanu-c/axolotl#readme
+Description: 
+  Axolotl is a complete Signal client, it allows you to create a Signal account and have discussions with your contacts. Unlike the desktop Signal client, Axolotl is completely autonomous and doesn't require you to have created an account with the official Signal application.
