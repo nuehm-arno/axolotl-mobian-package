@@ -1,5 +1,7 @@
 # axolotl-mobian-package
-Here you can find an arm64 package of Axolotl (https://github.com/nanu-c/axolotl) for Mobian in version 0.9.9.
+Here you can find an unofficial, experimental arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian in version 0.9.9.
+
+If you are looking for a package, made with debmake and debuild using a Makefile in the source directory, have a look [here](https://github.com/nuehm-arno/axolotl-debian-packaging) and feel free to give some feedback.
 
 # Use
 Download the Debian package file with
@@ -13,7 +15,7 @@ sudo apt install ./axolotl_0.9.9-1_arm64.deb
 ```
 
 # Important
-If you have used the Axolotl Installer for Mobian (https://github.com/nuehm-arno/axolotl-mobian-installer) on your current system, you should follow these steps to remove at least the old desktop file(s) before installing the Debian package file.
+If you have used the [Axolotl Installer for Mobian](https://github.com/nuehm-arno/axolotl-mobian-installer) on your current system, you should follow these steps to remove at least the old desktop file(s) before installing the Debian package file.
 ```
 sudo rm /usr/share/applications/axolotl.desktop
 ```
