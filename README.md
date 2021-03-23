@@ -6,7 +6,7 @@ If you are looking for a package, made with debmake and debuild using a Makefile
 # Use
 Download the Debian package file with
 ```
-git clone https://github.com/nuehm-arno/axolotl-mobian-package.git
+git clone https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
