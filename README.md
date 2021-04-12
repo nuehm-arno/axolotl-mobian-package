@@ -1,7 +1,7 @@
 # axolotl-mobian-package
-Here you can find an unofficial, experimental arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian in version 0.9.9.
+Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian in version 0.9.9.
 
-If you are looking for a package, made with debmake and debuild using a Makefile in the source directory, have a look [here](https://github.com/nuehm-arno/axolotl-debian-packaging) and feel free to give some feedback.
+It was created with debmake and debuild using a Makefile in the source directory. Have a look [here](https://github.com/nuehm-arno/axolotl-debian-packaging) for details and feel free to give some feedback.
 
 # Use
 Download the Debian package file with
@@ -10,8 +10,7 @@ git clone https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
-cd axolotl-mobian-package
-sudo apt install ./axolotl_0.9.9-1_arm64.deb
+cd axolotl-mobian-package && sudo apt install ./axolotl_0.9.9-3_arm64.deb
 ```
 
 # Important
@@ -24,7 +23,7 @@ sudo rm /usr/share/applications/axolotl.desktop
 To remove the old build/installation of Axolotl completely from your system, follow these steps
 ```
 #if you have no other go projects
-sudo rm go
+sudo rm -rf go
 #if you don't need these packages somewhere else
 sudo apt remove --purge npm nodejs mercurial golang python
 ```
@@ -39,17 +38,21 @@ sudo nano /usr/share/applications/axolotl.desktop
 The first start of Axolotl takes some time, because local folders have to be created.
 
 # Daemonized Server Setup
-Using this setup, Axolotl can be run as a daemon in the background and a browser (Firefox-ESR) for user interface.
-There are two more desktop files for this setup
+Using this setup, Axolotl can be run as a daemon in the background and a browser (cog or Firefox-ESR) as user interface.
+There are three more desktop files for this setup in this repo and you can copy these into your applications folder via
 ```
-/usr/share/applications/axolotl-server.desktop
-/usr/share/applications/axolotl-browser.desktop
+cd axolotl-mobian-package && sudo cp axolotl-server.desktop /usr/share/applications/
+cd axolotl-mobian-package && sudo cp axolotl-browser-cog.desktop /usr/share/applications/
+cd axolotl-mobian-package && sudo cp axolotl-browser-firefox.desktop /usr/share/applications/
 ```
-These files have the "NoDisplay=true" flag and are not shown in the App Menu. This can be achieved by changing the value to "false".
+Furthermore, you need cog installed on your system
+```
+sudo apt install cog
+```
 
 If you want Axolotl as daemon started automatically at login, copy the desktop file into the Gnome autostart folder with
 ```
-sudo cp /usr/share/applications/axolotl-server.desktop /etc/xdg/autostart
+cd axolotl-mobian-package && sudo cp axolotl-server.desktop /etc/xdg/autostart
 ```
 
 # Updates
@@ -60,10 +63,12 @@ Axolotl shall be removed via
 ```
 sudo apt remove --purge axolotl
 ```
-While removing the app, you will be asked, whether you want to keep your local files (configuration, registration, contacts and messages) or if you want them to be deleted.
+While removing the app, you may be asked, whether you want to keep your local files (configuration, registration, contacts and messages) or if you want them to be deleted.
 Please choose careful.
 
 # Axolotl Qt
+IMPORTANT: Axolotl Qt is not further developed and will be deprecated following v0.9.10.
+
 There is an option to use Axolotl with Qt via qmlscene, but this isn't working at the moment.
 
 If you are willing to give it a try, edit the desktop file and change the "#" between the two "Exec=" lines. You will also need the following dependencies
@@ -83,4 +88,4 @@ and you should backup these folders regularly and espescially before removing or
 
 
 # Disclaimer
-This package is experimental and it was built with the help of FPM. It is not made following the official Debian guidelines, but this is a future goal.
+This package is unofficial and not uploaded into the Debian repos.
