@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Axolotl-Browser-Cog
+GenericName=Signal Chat Client
+Exec=cog --doc-viewer http://127.0.0.1:9080
+Icon=axolotl.png
+Terminal=false
+Categories=Network;Chat;InstantMessaging
+StartupWMClass=axolotl
+NoDisplay=false

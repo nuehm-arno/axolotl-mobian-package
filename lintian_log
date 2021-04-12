@@ -1,0 +1,6 @@
+E: axolotl: copyright-file-contains-full-gpl-license
+E: axolotl: copyright-not-using-common-license-for-gpl
+W: axolotl: executable-not-elf-or-script etc/profile.d/axolotl.sh
+W: axolotl: hardening-no-pie usr/bin/axolotl
+W: axolotl: icon-size-and-directory-name-mismatch usr/share/icons/hicolor/128x128/apps/axolotl.png 142x142
+W: axolotl: no-manual-page usr/bin/axolotl
