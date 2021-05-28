@@ -1,5 +1,5 @@
-W: axolotl: executable-not-elf-or-script usr/share/axolotl/guis/qml/Main.qml
-W: axolotl: executable-not-elf-or-script usr/share/axolotl/guis/qml/qml/MainQML.qml
-W: axolotl: executable-not-elf-or-script usr/share/axolotl/guis/qml/ut/MainUt.qml
+E: axolotl: custom-library-search-path usr/bin/axolotl $$ORIGIN
+E: axolotl: sharedobject-in-library-directory-missing-soname usr/lib/libzkgroup_linux_arm64.so
 W: axolotl: hardening-no-pie usr/bin/axolotl
+W: axolotl: initial-upload-closes-no-bugs
 W: axolotl: no-manual-page usr/bin/axolotl
