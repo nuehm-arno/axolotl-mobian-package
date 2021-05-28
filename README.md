@@ -1,5 +1,5 @@
 # axolotl-mobian-package
-Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian in version 0.9.9.
+Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian in version 1.0.0.
 
 It was created with debmake and debuild using a Makefile in the source directory. Have a look [here](https://github.com/nuehm-arno/axolotl-debian-packaging) for details and feel free to give some feedback.
 
@@ -10,7 +10,7 @@ git clone https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
-cd axolotl-mobian-package && sudo apt install ./axolotl_0.9.9-3_arm64.deb
+cd axolotl-mobian-package && sudo apt install ./axolotl_1.0.0-1_arm64.deb
 ```
 
 # Important
@@ -67,7 +67,7 @@ While removing the app, you may be asked, whether you want to keep your local fi
 Please choose careful.
 
 # Axolotl Qt
-IMPORTANT: Axolotl Qt is not further developed and will be deprecated following v0.9.10.
+IMPORTANT: Axolotl Qt is not further developed and will be deprecated in the future.
 
 There is an option to use Axolotl with Qt via qmlscene, but this isn't working at the moment.
 
@@ -81,8 +81,8 @@ sudo apt-get install qml-module-qtquick.dialogs
 # Personal Data
 Your configuration, registration, contact and message files are stored here
 ```
-~/.config/textsecure.nanuc
-~/.local/share/textsecure.nanuc
+~/.config/textsecure.nanuc/
+~/.local/share/textsecure.nanuc/
 ```
 and you should backup these folders regularly and espescially before removing or re-installing Axolotl.
 
