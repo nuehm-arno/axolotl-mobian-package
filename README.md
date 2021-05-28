@@ -1,7 +1,9 @@
 # axolotl-mobian-package
 Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.0.
 
-It was created with debmake and debuild using a Makefile in the source directory. Have a look [here](https://github.com/nuehm-arno/axolotl-debian-packaging) for details and feel free to give some feedback.
+This version of Axolotl has rudimental Signal v2group support. If you haven't used the new v2groups of Signal before, it may take some time, before Signal server recognise your acoount as v2group-able. The current way to join v2groups is by being added by another user in the group. Group invitation links are not yet working.
+
+This package was created with debmake and debuild using a Makefile in the source directory. Have a look [here](https://github.com/nuehm-arno/axolotl-debian-packaging) for details and feel free to give some feedback.
 
 # Use
 Download the Debian package file with
