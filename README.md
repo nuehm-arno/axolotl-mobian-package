@@ -35,7 +35,7 @@ sudo nano /usr/share/applications/axolotl.desktop
 ```
 
 # First Start
-The first start of Axolotl takes some time, because local folders have to be created.
+The first start of Axolotl takes some time, because local folders have to be created and because the Electron source package has to be downloaded (~80Mb).
 
 # Daemonized Server Setup
 Using this setup, Axolotl can be run as a daemon in the background and a browser (cog or Firefox-ESR) as user interface.
