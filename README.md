@@ -1,5 +1,5 @@
 # axolotl-mobian-package
-Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian in version 1.0.0.
+Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.0.
 
 It was created with debmake and debuild using a Makefile in the source directory. Have a look [here](https://github.com/nuehm-arno/axolotl-debian-packaging) for details and feel free to give some feedback.
 
