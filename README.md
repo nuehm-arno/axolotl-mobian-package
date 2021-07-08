@@ -91,3 +91,6 @@ and you should backup these folders regularly and espescially before removing or
 
 # Disclaimer
 This package is unofficial and not uploaded into the Debian repos.
+
+# Reporting Issues
+Please report issues regarding Axolotl using the official [Axolotl issue tracker](https://github.com/nanu-c/axolotl/issues).
