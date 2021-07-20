@@ -19,21 +19,6 @@ and start the installation with
 cd axolotl-mobian-package && sudo apt install ./axolotl_1.0.1-2_arm64.deb
 ```
 
-# Important
-If you have used the [Axolotl Installer for Mobian](https://github.com/nuehm-arno/axolotl-mobian-installer) on your current system, you should follow these steps to remove at least the old desktop file(s) before installing the Debian package file.
-```
-sudo rm /usr/share/applications/axolotl.desktop
-```
-(or similar, if you created other starters for Axolotl)
-
-To remove the old build/installation of Axolotl completely from your system, follow these steps
-```
-#if you have no other go projects
-sudo rm -rf go
-#if you don't need these packages somewhere else
-sudo apt remove --purge npm nodejs mercurial golang python
-```
-
 # App Menu Entry
 This installation method provides you with one App Menu Entry "Axolotl". It can be altered with
 ```
@@ -71,6 +56,19 @@ Axolotl shall be removed via
 sudo apt remove --purge axolotl
 ```
 
+If you have used the [Axolotl Installer for Mobian](https://github.com/nuehm-arno/axolotl-mobian-installer) on your current system, you should follow these steps to remove at least the old desktop file(s) before installing the Debian package file.
+```
+sudo rm /usr/share/applications/axolotl.desktop
+```
+(or similar, if you created other starters for Axolotl)
+
+To remove the old build/installation of Axolotl completely from your system, follow these steps
+```
+#if you have no other go projects
+sudo rm -rf go
+#if you don't need these packages somewhere else
+sudo apt remove --purge npm nodejs mercurial golang python
+```
 
 # Axolotl Qt
 IMPORTANT: Axolotl Qt is not further developed and will be deprecated in the future.
