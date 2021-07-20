@@ -1,9 +1,13 @@
 # axolotl-mobian-package
-Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.0.
+Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.1.
 
-This version of Axolotl has rudimental Signal v2group support. If you haven't used the new v2groups of Signal before, it may take some time, before Signal server recognise your acoount as v2group-able. The current way to join v2groups is by being added by another user in the group. Group invitation links are not yet working. [Here](https://github.com/nanu-c/axolotl/pull/460) is a list of things to complete for basic v2group support in Axolotl.
+This version of Axolotl was built from scratch using the repository Makefile and has the following main improvements:
 
-This package was created with debmake and debuild using a Makefile in the source directory. Have a look [here](https://github.com/nuehm-arno/axolotl-debian-packaging) for details and feel free to give some feedback.
+- Handle profile key changes
+- Only trigger a notification once per 10s per chat
+- Hotfix: Verification Input fix
+
+Still, the current way to join v2groups is by being added by another user in the group. Group invitation links are not yet working. [Here](https://github.com/nanu-c/axolotl/pull/460) is a list of things to complete for basic v2group support in Axolotl.
 
 # Use
 Download the Debian package file with
@@ -12,7 +16,7 @@ git clone https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
-cd axolotl-mobian-package && sudo apt install ./axolotl_1.0.0-1_arm64.deb
+cd axolotl-mobian-package && sudo apt install ./axolotl_1.0.1-2_arm64.deb
 ```
 
 # Important
@@ -60,18 +64,18 @@ cd axolotl-mobian-package && sudo cp axolotl-server.desktop /etc/xdg/autostart
 # Updates
 If a new version of Axolotl or this package is out, you can simply use the installation command to update the app. Your local files will be kept, but a backup is recommended.
 
+
 # Removing Axolotl
 Axolotl shall be removed via
 ```
 sudo apt remove --purge axolotl
 ```
-While removing the app, you may be asked, whether you want to keep your local files (configuration, registration, contacts and messages) or if you want them to be deleted.
-Please choose careful.
+
 
 # Axolotl Qt
 IMPORTANT: Axolotl Qt is not further developed and will be deprecated in the future.
 
-There is an option to use Axolotl with Qt via qmlscene, but this isn't working at the moment.
+There is an option to use Axolotl with Qt via qmlscene, but this isn't working reliably at the moment.
 
 If you are willing to give it a try, edit the desktop file and change the "#" between the two "Exec=" lines. You will also need the following dependencies
 ```
@@ -91,6 +95,7 @@ and you should backup these folders regularly and espescially before removing or
 
 # Disclaimer
 This package is unofficial and not uploaded into the Debian repos.
+
 
 # Reporting Issues
 Please report issues regarding Axolotl using the official [Axolotl issue tracker](https://github.com/nanu-c/axolotl/issues).
