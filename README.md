@@ -12,7 +12,7 @@ Still, the current way to join v2groups is by being added by another user in the
 # Use
 Download the Debian package file with
 ```
-git clone https://github.com/nuehm-arno/axolotl-mobian-package
+git clone --depth=1 https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
