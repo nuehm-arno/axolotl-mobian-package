@@ -1,11 +1,11 @@
 # axolotl-mobian-package
-Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.1.
+Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.2.
 
 This version of Axolotl was built from scratch using the repository Makefile and has the following main improvements:
 
-- Handle profile key changes
-- Only trigger a notification once per 10s per chat
-- Hotfix: Verification Input fix
+- Fix Linking Signal Desktop
+- Fix setting a password
+- Code quality improvements
 
 Still, the current way to join v2groups is by being added by another user in the group. Group invitation links are not yet working. [Here](https://github.com/nanu-c/axolotl/pull/460) is a list of things to complete for basic v2group support in Axolotl.
 
@@ -16,7 +16,7 @@ git clone --depth=1 https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
-cd axolotl-mobian-package && sudo apt install ./axolotl_1.0.1-2_arm64.deb
+cd axolotl-mobian-package && sudo apt install ./axolotl_1.0.2-1_arm64.deb
 ```
 
 # App Menu Entry
