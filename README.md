@@ -1,12 +1,12 @@
 # axolotl-mobian-package
-Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.4.
+Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.5.
 
 This version of Axolotl was built from scratch using the repository Makefile and has the following main improvements:
 
-- Sending is fixed
-- Fix Registration is not complete
+- Rust Backend (crayfish) is implemented
+- Registration is fixed
 
-Still, the current way to join v2groups is by being added by another user in the group. Group invitation links are not yet working. [Here](https://github.com/nanu-c/axolotl/pull/460) is a list of things to complete for basic v2group support in Axolotl.
+Still, the current way to join v2groups is by being added by another known user in the group. Group invitation links are not yet working.
 
 # Use
 Download the Debian package file with
@@ -15,7 +15,7 @@ git clone --depth=1 https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
-cd axolotl-mobian-package && sudo apt install ./axolotl_1.0.4-1_arm64.deb
+cd axolotl-mobian-package && sudo apt install ./axolotl_1.0.5-1_arm64.deb
 ```
 
 # App Menu Entry
@@ -53,20 +53,6 @@ If a new version of Axolotl or this package is out, you can simply use the insta
 Axolotl shall be removed via
 ```
 sudo apt remove --purge axolotl
-```
-
-If you have used the [Axolotl Installer for Mobian](https://github.com/nuehm-arno/axolotl-mobian-installer) on your current system, you should follow these steps to remove at least the old desktop file(s) before installing the Debian package file.
-```
-sudo rm /usr/share/applications/axolotl.desktop
-```
-(or similar, if you created other starters for Axolotl)
-
-To remove the old build/installation of Axolotl completely from your system, follow these steps
-```
-#if you have no other go projects
-sudo rm -rf go
-#if you don't need these packages somewhere else
-sudo apt remove --purge npm nodejs mercurial golang python
 ```
 
 # Axolotl Qt
