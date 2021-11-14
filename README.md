@@ -35,9 +35,13 @@ The first start of Axolotl takes some time, because local folders have to be cre
 Using this setup, Axolotl can be run as a daemon in the background and a browser (cog or Firefox-ESR) as user interface.
 There are three more desktop files for this setup in this repo and you can copy these into your applications folder via
 ```
-cd axolotl-mobian-package && sudo cp axolotl-server.desktop /usr/share/applications/
-cd axolotl-mobian-package && sudo cp axolotl-browser-cog.desktop /usr/share/applications/
-cd axolotl-mobian-package && sudo cp axolotl-browser-firefox.desktop /usr/share/applications/
+sudo cp $HOME/axolotl-mobian-package/axolotl-server.desktop /usr/share/applications/
+```
+```
+sudo cp $HOME/axolotl-mobian-package/axolotl-browser-cog.desktop /usr/share/applications/
+```
+```
+sudo cp $HOME/axolotl-mobian-package/axolotl-browser-firefox.desktop /usr/share/applications/
 ```
 Furthermore, you need cog installed on your system
 ```
@@ -46,7 +50,7 @@ sudo apt install cog
 
 If you want Axolotl as daemon started automatically at login, copy the desktop file into the Gnome autostart folder with
 ```
-cd axolotl-mobian-package && sudo cp axolotl-server.desktop /etc/xdg/autostart
+sudo cp $HOME/axolotl-mobian-package/axolotl-server.desktop /etc/xdg/autostart
 ```
 
 # Updates
