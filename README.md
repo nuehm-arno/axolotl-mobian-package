@@ -1,14 +1,15 @@
 # axolotl-mobian-package
-Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.7 (v1.0.6 needed some hotfixes).
+Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.8.
 
-This version of Axolotl was built from scratch using the repository Makefile and has the following main improvements:
+This version of Axolotl was cross-compiled from scratch using the repository Makefile and has the following main improvements:
 
-* Fix signal desktop linking by change signal desktop link url
-* Fix ineffectual (unused before reassign) assignment of recipient
-* Fix add contacts (partially)
-* Update electron version
-* Fix deleting chats
-* Explicitly set ozone platform to Wayland for electron when needed
+  - Support receiving unidentfied sender messages -> fixes receiving messages
+  - French translation updated
+  - Delete warning message
+  - Standardise gettext usage
+  - Update electron
+  - Cross-compile capabilites in the makefile
+  - Debian packaging improvements 
 
 Still, the current way to join v2groups is by being added by another known user in the group. Group invitation links are not yet working.
 
@@ -19,7 +20,7 @@ git clone --depth=1 https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
-cd axolotl-mobian-package && sudo apt install ./axolotl_1.0.7-1_arm64.deb
+sudo apt install $HOME/axolotl-mobian-package/axolotl_1.0.8-1_arm64.deb
 ```
 
 # App Menu Entry
