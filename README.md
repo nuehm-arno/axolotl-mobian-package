@@ -20,7 +20,8 @@ git clone --depth=1 https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
-sudo apt install $HOME/axolotl-mobian-package/axolotl_1.0.8-2_arm64.deb
+cd axolotl-mobian-package
+sudo apt install ./axolotl_1.0.8-2_arm64.deb
 ```
 
 # App Menu Entry
