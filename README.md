@@ -7,8 +7,8 @@ This version of Axolotl was cross-compiled from scratch using the repository Mak
   - French translation updated
   - Delete warning message
   - Standardise gettext usage
-  - Update electron
-  - Cross-compile capabilites in the makefile
+  - Update electron (REVOKED ON MOBIAN DUE TO ELECTRON-WAYLAND BUG)
+  - Cross-compile capabilities in the makefile
   - Debian packaging improvements 
 
 Still, the current way to join v2groups is by being added by another known user in the group. Group invitation links are not yet working.
@@ -20,7 +20,7 @@ git clone --depth=1 https://github.com/nuehm-arno/axolotl-mobian-package
 ```
 and start the installation with
 ```
-sudo apt install $HOME/axolotl-mobian-package/axolotl_1.0.8-1_arm64.deb
+sudo apt install $HOME/axolotl-mobian-package/axolotl_1.0.8-2_arm64.deb
 ```
 
 # App Menu Entry
@@ -30,7 +30,7 @@ sudo nano /usr/share/applications/axolotl.desktop
 ```
 
 # First Start
-The first start of Axolotl takes some time, because local folders have to be created and because the Electron source package has to be downloaded (~80Mb).
+The first start of Axolotl takes some time, because local folders have to be created and because the Electron source package has to be downloaded (~100Mb).
 
 # Daemonized Server Setup
 Using this setup, Axolotl can be run as a daemon in the background and a browser (cog or Firefox-ESR) as user interface.
