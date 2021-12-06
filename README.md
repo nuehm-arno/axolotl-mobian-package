@@ -13,6 +13,8 @@ This version of Axolotl was cross-compiled from scratch using the repository Mak
 
 Still, the current way to join v2groups is by being added by another known user in the group. Group invitation links are not yet working.
 
+EDIT: v1.0.8-3 is packaged with the Electron Ozone platform deactivated to make letter input possible again - except ü and V...
+
 # Use
 Download the Debian package file with
 ```
