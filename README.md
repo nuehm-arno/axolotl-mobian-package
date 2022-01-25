@@ -23,11 +23,10 @@ Wayland support via the Electron Ozone platform is still deactivated due to the 
 # Use
 Download the Debian package file with
 ```
-git clone --depth=1 https://github.com/nuehm-arno/axolotl-mobian-package
+wget https://github.com/nuehm-arno/axolotl-mobian-package/raw/v1.0.9-1/axolotl_1.0.9-1_arm64.deb
 ```
 and start the installation with
 ```
-cd axolotl-mobian-package
 sudo apt install ./axolotl_1.0.9-1_arm64.deb
 ```
 
@@ -43,6 +42,9 @@ The first start of Axolotl takes some time, because local folders have to be cre
 # Daemonized Server Setup
 Using this setup, Axolotl can be run as a daemon in the background and a browser (cog or Firefox-ESR) as user interface.
 There are three more desktop files for this setup in this repo and you can copy these into your applications folder via
+```
+git clone --depth=1 https://github.com/nuehm-arno/axolotl-mobian-package
+```
 ```
 sudo cp $HOME/axolotl-mobian-package/axolotl-server.desktop /usr/share/applications/
 ```
