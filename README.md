@@ -1,33 +1,23 @@
-# axolotl-mobian-package
-Here you can find an arm64 package of [Axolotl](https://github.com/nanu-c/axolotl) for Mobian or other Debian-based distros in version 1.0.9.
+# DEPRECATED
+Axolotl for Debian arm64 systems is now built and packaged fully automatically via Github workflow in the [source repository](https://github.com/nanu-c/axolotl) and the package file can be found in the [release asset section](https://github.com/nanu-c/axolotl/releases).
 
-This version of Axolotl was cross-compiled from scratch using the repository Makefile and has the following main improvements:
+A direct download link for v1.1.0 for example looks like this
 
-  * Fix 'Verifiy Identity'
-  * Fix option to mute groups
-  * Fix links opening inside of axolotl on ubuntu touch
-  * Fix rendering of expire timer in chats with self destroying messages
-  * Remove "Upstream Changes" Warning Message
-  * Add support for voice notes
-  * Add support for joining groups
-  * Fix opening document attachments
-  * Fix Messages with special characters (e.g. "<") not displayed correctly
-  * Update many dependencies
-  * Fix receiving messages by waking up crayfish childprocess from sleep
+https://github.com/nanu-c/axolotl/releases/download/v1.1.0/axolotl_1.1.0-1_arm64.deb
 
-Group invitation links are not yet working.
+Special desktop files and old versions are still stored here.
 
+# Current issues
 Wayland support via the Electron Ozone platform is still deactivated due to the letter input bug (still ü, C and V are missing, too) - more information [here](https://github.com/nanu-c/axolotl/issues/635).
 
-
-# Use
+# Installation
 Download the Debian package file with
 ```
-wget https://github.com/nuehm-arno/axolotl-mobian-package/raw/v1.0.9-1/axolotl_1.0.9-1_arm64.deb
+wget https://github.com/nanu-c/axolotl/releases/download/v1.1.0/axolotl_1.1.0-1_arm64.deb
 ```
 and start the installation with
 ```
-sudo apt install ./axolotl_1.0.9-1_arm64.deb
+sudo apt install ./axolotl_1.1.0-1_arm64.deb
 ```
 
 # App Menu Entry
@@ -56,7 +46,7 @@ sudo cp $HOME/axolotl-mobian-package/axolotl-browser-firefox.desktop /usr/share/
 ```
 Furthermore, you need cog installed on your system
 ```
-sudo apt install cog=0.8.1-1
+sudo apt install cog
 ```
 
 If you want Axolotl as daemon started automatically at login, copy the desktop file into the Gnome autostart folder with
@@ -93,11 +83,6 @@ Your configuration, registration, contact and message files are stored here
 ~/.local/share/textsecure.nanuc/
 ```
 and you should backup these folders regularly and espescially before removing or re-installing Axolotl.
-
-
-# Disclaimer
-This package is unofficial and not uploaded into the Debian repos.
-
 
 # Reporting Issues
 Please report issues regarding Axolotl using the official [Axolotl issue tracker](https://github.com/nanu-c/axolotl/issues).
