@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Axolotl-Electron
+GenericName=Signal Chat Client
+Exec=/home/mobian/.config/textsecure.nanuc/electron/vendor/electron-linux-arm64/electron http://127.0.0.1:9080
+Icon=axolotl
+Terminal=false
+Categories=Network;Chat;InstantMessaging
+StartupWMClass=axolotl
+NoDisplay=false
+X-KDE-FormFactor=desktop;tablet;handset;
+X-Purism-FormFactor=Workstation;Mobile;
+
