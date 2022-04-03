@@ -11,3 +11,4 @@ StartupWMClass=axolotl
 NoDisplay=false
 X-KDE-FormFactor=desktop;tablet;handset;
 X-Purism-FormFactor=Workstation;Mobile;
+X-GNOME-UsesNotifications=true
